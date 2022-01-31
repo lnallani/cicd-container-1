@@ -11,6 +11,6 @@ phases:
   post_build:
     commands:
       - docker push 830347306116.dkr.ecr.us-east-1.amazonaws.com/demo-ear
-      - printf '[{"name":<TASK_DEFINITION_NAME>,"imageUri":"%s"}]' 830347306116.dkr.ecr.us-east-1.amazonaws.com > imagedefinitions.json
+      - printf '[{"name":HelloLokeshTask,"830347306116.dkr.ecr.us-east-1.amazonaws.com/demo-ear":"%s"}]' 830347306116.dkr.ecr.us-east-1.amazonaws.com > imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
