@@ -7,7 +7,7 @@ phases:
   build:
     commands:
       - docker build -t hellowworldaws:latest .
-      - docker tag helloworldaws:latest 830347306116.dkr.ecr.us-east-1.amazonaws.com/demo-ear
+      - docker tag helloworldaws:latest 830347306116.dkr.ecr.us-east-1.amazonaws.com/demo-ear:latest
   post_build:
     commands:
       - docker push 830347306116.dkr.ecr.us-east-1.amazonaws.com/demo-ear
